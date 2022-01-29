@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { resolveSoa } = require("dns");
 const { rest } = require("lodash");
-const { Category } = require("../../models");
+const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
 
