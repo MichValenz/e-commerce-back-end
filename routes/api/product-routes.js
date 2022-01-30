@@ -65,19 +65,16 @@ router.post("/", (req, res) => {
     product_name: req.body.product_name,
     price: req.body.price,
     stock: req.body.stock,
-    
-    //I NEED TO ADD CATEGORY ID and TAGS I JUST DONT KNOW HOW YET//
+
+    //I NEED TO ADD CATEGORY ID and TAGS I JUST DONT KNOW HOW YET tagIds: [1, 2, 3, 4]//
   })
-  .then(dbProductData => res.json(dbProductData))
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+    .then((dbProductData) => res.json(dbProductData))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 
 
-
-
-  
 
   Product.create(req.body)
     .then((product) => {
@@ -104,7 +101,15 @@ router.post("/", (req, res) => {
 // update product
 router.put("/:id", (req, res) => {
   // update product data
-  Product.update(req.body, {
+  Product.update(
+    {
+      product_name: req.body.product_name,
+      price: req.body.price,
+      stock: req.body.stock,
+      category_id: req.body.category_id,
+    },
+    
+    {
     where: {
       id: req.params.id,
     },
@@ -145,9 +150,6 @@ router.put("/:id", (req, res) => {
 
 
 
-
-
-
 router.delete("/:id", (req, res) => {
   // delete one product by its `id` value
   Product.destroy({
@@ -157,7 +159,7 @@ router.delete("/:id", (req, res) => {
   })
     .then((dbProductData) => {
       if (!dbProductData) {
-        res.status(404).json({ message: "No product found with this id" });
+        res.status(404).json({ message: "No product found" });
         return;
       }
       res.json(dbProductData);
