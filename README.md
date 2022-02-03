@@ -1,16 +1,46 @@
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
+[![License: MIT](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://opensource.org/licenses/MIT)
 
+# e-commerce-back-end
 
-GIVEN a functional Express.js API
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
-WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
-WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
-WHEN I open API GET routes in Insomnia for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete data in my database
+## Description
+
+The e-commerce back-end project provides routes and models.
+
+## Table of Contents
+
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributions](#Contributions)
+- [Testing](#Testing)
+- [License](#License)
+- [Questions](#Questions)
+
+## Installation
+
+The user must clone the remote repository onto their computer and use the server to test routes.
+
+## Usage
+
+Provides back end code to e-commerce application.
+
+## Contributions
+
+No contributions.
+
+## Testing
+
+After cloning the remote repository onto your computer open in desired code editor and use the terminal to open the server. Test the project by answering the prompt questions and creating a test routes.
+
+![screenshot of routes in Insomnia](images/screenshot.png)
+
+## License
+
+This project has an MIT license.
+https://opensource.org/licenses/MIT
+
+## Questions
+
+Need to reach me?
+
+- Email: michvalenz27@gmail.com
+- [GitHub](https://github.com/MichValenz/e-commerce-back-end)
