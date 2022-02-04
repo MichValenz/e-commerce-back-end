@@ -38,6 +38,11 @@ After cloning the remote repository onto your computer open in desired code edit
 This project has an MIT license.
 https://opensource.org/licenses/MIT
 
+## Walkthrough Videos:
+
+https://watch.screencastify.com/v/MIHmL1mes99khOQXgI0H
+https://watch.screencastify.com/v/0RMy0hGHhqHZvvLQ9IYk
+
 ## Questions
 
 Need to reach me?

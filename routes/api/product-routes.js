@@ -71,13 +71,6 @@ router.post("/", (req, res) => {
 
     //I NEED TO ADD CATEGORY ID and TAGS I JUST DONT KNOW HOW YET tagIds: [1, 2, 3, 4]//
   })
-    .then((dbProductData) => res.json(dbProductData))
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-
-  Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
